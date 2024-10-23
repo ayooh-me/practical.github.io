@@ -26,151 +26,38 @@
     <meta charset="utf-8" />
   </style>
 </head>
-<body >
-    <header id="navbar">
-        <a href="#" class="logo"><img src="src/images/logo1.png" alt="Logo"  height="60"></a>
-        <div class="navigation">
-            <div class="navigation-items">
-                <a href="home.html">Home</a>
-                <a href="src/comments.html">Comments</a>
-                <a href="src/shop.html">Marketplace</a>
-                <a href="src/shop.html">Quiz</a>
-                <a href="src/sitemap.html">Site Map</a>
-                <a href="src/aboutus.html">About us</a>
-                <a href="src/gallery.html">Gallery</a>
-            </div>
+<body>
+    <div class="container">
+        <video autoplay muted loop>
+            <source src="Galle Fort _ Sri Lanka _ Cinematic video.mp4" type="video/mp4">
+        </video>
+
+        <h1>Galle Fort, Sri Lanka</h1>
+        <h2>About Galle Fort</h2>
+        <p>Galle Fort, located in the southern region of Sri Lanka, is a historic monument that stands as a testament to the rich cultural heritage of the country. Built by the Portuguese in the 16th century and later fortified by the Dutch, it has witnessed the rise and fall of empires, colonial conquests, and the evolution of a vibrant trading hub.</p>
+
+        <h2>Historical Significance</h2>
+        <p>The fort played a crucial role in the maritime trade routes of the Indian Ocean. It has been declared a UNESCO World Heritage Site due to its well-preserved architecture and historical importance.</p>
+
+        <h2>Visitor Information</h2>
+        <div class="highlight">
+            <h3>How to Visit</h3>
+            <p>Galle Fort is accessible by road from Colombo, approximately a 2.5-hour drive. The best time to visit is between December and March when the weather is pleasant.</p>
         </div>
-    </header>
 
-<section class="text-areas">
+        <h2>Cultural Aspects</h2>
+        <p>Galle Fort is not just a historical site; it is a living community with shops, cafes, and galleries. Local festivals, such as the Galle Literary Festival, celebrate the region's rich culture.</p>
 
-    <div class="content active">
-    <h1>ABOUTGALLE FORT<br> <span>Camping</span></h1>
+        <h2>Activities</h2>
+        <ul>
+            <li>Explore the ancient walls and bastions</li>
+            <li>Visit the National Maritime Museum</li>
+            <li>Enjoy local cuisine at seaside restaurants</li>
+            <li>Take a stroll along the picturesque streets</li>
+        </ul>
 
-    <br>
-        <p>Galle Fort, located in the southern region of Sri Lanka, is a historic monument that stands as a testament to the rich cultural heritage of the country. Spanning over centuries, Galle Fort has witnessed the rise and fall of empires, colonial conquests, and the evolution of a vibrant trading hub. In this blog post, we will take a deep dive into the history of Galle Fort, exploring its origins, the various influences it has encountered, and the significance it holds in the present day. </p><br>
-    </div><br><br>
-
-  <video class="video-slide active" src="Galle Fort _ Sri Lanka _ Cinematic video.mp4" autoplay muted loop></video>
-  
-    <div class="content">
-        <h1>VIEW FROM THE SKYLINE<br> <span>Hiking</span></h1>
-    
-        <br>
-            <p>Hiking in Sri Lanka offers stunning vistas of lush tea plantations, 
-                misty mountains, and cascading waterfalls. Popular trails include 
-                Adam's Peak, Ella Rock, and Knuckles Mountain Range. The island's 
-                biodiversity is breathtaking, with exotic birds, monkeys, and 
-                leopards encountered along the way. Friendly locals and tasty 
-                cuisine make for a memorable adventure. </p><br>
-        </div><br><br>
-
-        <div class="content" active>
-            <h1>GET WET IN BLUE WATERS<br> <span>Baches</span></h1>
-        
-            <br>
-                <p>Sri Lanka is blessed with some of the most beautiful beache
-                s in the world. From the bustling shores of Unawatuna to
-                the serene waters of Mirissa, the beaches of Sri Lanka
-                offer something for everyone. Whether you're looking
-                for surfing, sunbathing, or simply a peaceful stroll
-                along the sand, you'll find it all on the beaches of
-                this stunning island nation. </p><br>
-            </div><br><br>
-
-    <div class="slider">
-        <div class =slider-button></div>
-        <div class =slider-button></div>
-        <div class =slider-button></div>
+        <h2>Get Wet in Blue Waters</h2>
+        <p>Sri Lanka is blessed with some of the most beautiful beaches in the world. From the bustling shores of Unawatuna to the serene waters of Mirissa, the beaches of Sri Lanka offer something for everyone. Whether you're looking for surfing, sunbathing, or simply a peaceful stroll along the sand, you'll find it all on the beaches of this stunning island nation.</p>
     </div>
-    
-    
-</section>
-
-<br><br>
-
-<div class="big-additional">
-   <div class="block"><a href="src/hill_country.html"><img src="additional 1.png"  class="additional"></a><br>
-    <h2>Hill Country of Sri lanka</h2></div> 
-    
-    <div class="block"><a href="src/beachside.html"><img src="additional 2.jpg"  class="additional"></a>
-        <h2>Beach side of Sri lanka</h2></div>
-
-   <div class="block"><a href="Additional 3/additional3.html"><img src="additional 3.jpg"  class="additional"></a>
-    <h2>Ancient sites of Sri lanka</h2></div> 
-
-    <div class="block"><a href="src/extra1.html"><img src="additional 4.jpg"  class="additional"></a>
-        <h2>Wild life and camping in Sri lanka</h2></div>
-</div>
-<script src="src/script/main.js"></script>
-
-<script>
-    //JS for video slider
-    const btns=document.querySelectorAll(".slider-button");
-    const slides=document.querySelectorAll(".video-slide");
-    const contents=document.querySelectorAll(".content");
-
-    var sliderNav=function(manual){
-
-        btns.forEach((btn)=>{
-            btn.classList.remove("active");
-        });
-
-        slides.forEach((slide)=>{
-            slide.classList.remove("active");
-        });
-
-        contents.forEach((content)=>{
-            content.classList.remove("active");
-        });
-
-        btns[manual].classList.add("active");
-        slides[manual].classList.add("active");
-        contents[manual].classList.add("active");
-    }
-
-    btns.forEach((btn,i) => {
-        btn.addEventListener("click",() =>{
-            sliderNav(i);
-        }); 
-    })
-
-</script>
-
-
-
-  
-
-
-
-
-
-
-
-    <footer>
-        <div class="container-1">
-            <h3>USEFUL LINKS</h3>
-            <a href="src/comments.html">COMMENTS</a>
-            <a href="src/shop.html">SHOP</a>
-            <a href="src/shop.html">QUIZ</a>
-            <a href="src/sitemap.html">SITEMAP</a>
-            <a href="src/gallery.html">GALLERY</a>
-        </div>
-        <div class="container-2">
-            <h3>QUICK MESSAGE TO US</h3>
-            <form>
-                <input id="message" type="text" placeholder="Enter Message">
-                <br>
-                <button onclick="sendEmail()">SUBMIT</button>
-            </form>
-        </div>
-        <div class="container-3">
-            <h3>CONTACT US</h3>
-            <a href="mailto:visal.20221302@iit.ac.lk">Visal Vitharana</a>
-            <a href="mailto:didula.20221256@iit.ac.lk">Didula Senevirathne</a>
-            <a href="mailto:piyumdi.20221317@iit.ac.lk">Piyumdi Liyange</a>
-            <a href="mailto:disadi.20221545@iit.ac.lk">Disadi Arachchi</a>
-        </div>
-    </footer>
 </body>
 </html>

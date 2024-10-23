@@ -16,12 +16,11 @@
       color: white;
       text-align: center;
       padding: 20px;
-      /* Removed overflow: hidden; to enable scrolling */
     }
     .container {
       max-width: 1200px;
-      width: 90%; /* Set width to 90% for better fit on large screens */
-      height: auto; /* Adjust height to accommodate content */
+      width: 90%;
+      height: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -30,27 +29,27 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      position: relative; /* For positioning text */
+      position: relative;
       padding: 20px;
-      margin: auto; /* Center the container */
+      margin: auto;
     }
     video {
       width: 100%;
       height: auto;
       border-radius: 10px;
       margin-bottom: 20px;
-      z-index: 1; /* Ensure video is above background */
+      z-index: 1;
     }
     h1, h2 {
       margin: 10px 0;
-      z-index: 2; /* Ensure text is above background */
+      z-index: 2;
     }
     .highlight {
       background-color: rgba(0, 0, 0, 0.5);
       padding: 15px;
       border-radius: 10px;
       margin: 20px 0;
-      z-index: 2; /* Ensure highlight is above background */
+      z-index: 2;
     }
     .image-gallery {
       display: flex;
@@ -59,26 +58,44 @@
       margin-top: 20px;
     }
     .image-gallery img {
-      width: 200px; /* Set a fixed width for images */
-      height: auto; /* Maintain aspect ratio */
+      width: 200px;
+      height: auto;
       margin: 10px;
       border-radius: 10px;
     }
+    .button-container {
+      margin-top: 30px;
+    }
+    .button {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none; /* Remove underline */
+      display: inline-block; /* Make anchor behave like a button */
+    }
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
     @media (min-width: 768px) {
       .image-gallery img {
-        width: 250px; /* Larger images for bigger screens */
+        width: 250px;
       }
     }
     @media (min-width: 1200px) {
       .image-gallery img {
-        width: 300px; /* Even larger images for very large screens */
+        width: 300px;
       }
     }
   </style>
 </head>
 <body>
     <div class="container">
-        <h2>ABOUT GALLE FORT</h2> <!-- Added title here -->
+        <h2>ABOUT GALLE FORT</h2>
         <video autoplay muted loop>
             <source src="Galle Fort _ Sri Lanka _ Cinematic video.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -118,6 +135,15 @@
             <img src="image3.jpg" alt="Image 3">
             <img src="image4.jpg" alt="Image 4">
             <img src="image5.jpg" alt="Image 5">
+        </div>
+
+        <!-- Fake Buttons Section -->
+        <div class="button-container">
+            <a href="https://en.wikipedia.org/wiki/Galle" class="button">Learn More</a>
+            <a href="https://en.wikipedia.org/wiki/Tourism_in_Sri_Lanka" class="button">Book a Tour</a>
+            <a href="https://en.wikipedia.org/wiki/Contact" class="button">Contact Us</a>
+            <a href="https://en.wikipedia.org/wiki/Gallery" class="button">Gallery</a>
+            <a href="https://en.wikipedia.org/wiki/Blog" class="button">Visit Our Blog</a>
         </div>
     </div>
 </body>

@@ -20,7 +20,7 @@
     }
     .container {
       max-width: 1200px;
-      width: 100%;
+      width: 90%; /* Set width to 90% for better fit on large screens */
       height: auto; /* Adjust height to accommodate content */
       display: flex;
       flex-direction: column;
@@ -32,6 +32,7 @@
       background-size: cover;
       position: relative; /* For positioning text */
       padding: 20px;
+      margin: auto; /* Center the container */
     }
     video {
       width: 100%;
@@ -62,6 +63,16 @@
       height: auto; /* Maintain aspect ratio */
       margin: 10px;
       border-radius: 10px;
+    }
+    @media (min-width: 768px) {
+      .image-gallery img {
+        width: 250px; /* Larger images for bigger screens */
+      }
+    }
+    @media (min-width: 1200px) {
+      .image-gallery img {
+        width: 300px; /* Even larger images for very large screens */
+      }
     }
   </style>
 </head>
@@ -102,11 +113,11 @@
 
         <!-- Image Gallery -->
         <div class="image-gallery">
-            <img src="image1.jpg" alt="Image 1">
-            <img src="image2.jpg" alt="Image 2">
-            <img src="image3.jpg" alt="Image 3">
-            <img src="image4.jpg" alt="Image 4">
-            <img src="image5.jpg" alt="Image 5">
+            <img src="dolphin5.jpg" alt="Image 1">
+            <img src="dolphin2.jpg" alt="Image 2">
+            <img src="dolphin3.jpg" alt="Image 3">
+            <img src="dolphin4.jpg" alt="Image 4">
+            <img src="dolphin5.jpg" alt="Image 5">
         </div>
     </div>
 </body>

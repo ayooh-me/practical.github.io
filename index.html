@@ -4,32 +4,61 @@
   <meta charset="UTF-8">
   <title>GALLE FORT</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="src/css/temp.css">
+  <link rel="stylesheet" type="text/css" href="src/css/main.css">
+  <script src="src/script/temp.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      overflow: hidden; /* Prevent scrolling */
+    }
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      height: 100vh; /* Full height */
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-image: url("https://wallpaperaccess.com/full/260168.jpg"); /* Set the background image */
+      background-image: url("https://wallpaperaccess.com/full/260168.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+      position: relative; /* For positioning text */
+      padding: 20px;
     }
-    <link rel="stylesheet" type="text/css" href="src/css/temp.css">
-    <link rel="stylesheet" type="text/css" href="src/css/main.css">
-    <script src="src/script/temp.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-    <meta charset="utf-8" />
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      z-index: 1; /* Ensure video is above background */
+    }
+    h1, h2 {
+      margin: 10px 0;
+      z-index: 2; /* Ensure text is above background */
+    }
+    .highlight {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px 0;
+      z-index: 2; /* Ensure highlight is above background */
+    }
   </style>
 </head>
 <body>
     <div class="container">
         <video autoplay muted loop>
             <source src="Galle Fort _ Sri Lanka _ Cinematic video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
 
         <h1>Galle Fort, Sri Lanka</h1>
